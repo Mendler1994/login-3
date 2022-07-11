@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	background:url(Recursos/Paisaje_Invierno.jpg)/*no-repeat*/; 
+	background-size: cover;
+}
+
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0,0,0,0.9);
+	box-sizing: border-box;
+	box-shadow: 0px 15px 25px 5px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+.box h1{
+	margin: 0px 0px 30px;
+	padding: 0px;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.box .inputBox{
+	position: relative;
+	padding-right: 20px;
+}
+
+.box .inputBox input{
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	background: hsla(0,0%,70%,0.20);
+	border-radius: 5px;
+}
+
+.box .inputBox label{
+	position: absolute;
+	top: 0px;
+	left: 7px;
+	padding: 10px 0px;
+	font-size: 14px;
+	color:whitesmoke;
+	letter-spacing: 1px;
+	pointer-events: none;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+	top:-30px;
+	left: 7px;
+	color: #1687A4/*#17A439*/;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.box input[type="submit"]{
+	border: none;
+	outline: none;
+	color: whitesmoke;
+	background: #1687A4/*#17A439*/;
+	padding: 5px 15px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
